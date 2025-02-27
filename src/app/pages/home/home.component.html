@@ -1,0 +1,356 @@
+<section class="fdb-block">
+    <div class="home-page">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+            <div class="carousel-inner">
+                @for(img of images; track img.id){
+                    <div class="carousel-item" [class.active]="img.id==0">
+                    <img [src]="img.src" class="d-block w-100" [alt]="img.alt" class="home-image">
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-traget="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-traget="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                @for(img of images; track img.id){
+                    <button type="button" data-bs-target="#carouselExample"
+                            [attr.data-bs-slide-to]="img.id"
+                            [class.active]="img==images[0]"
+                            [attr.aria-label]="'slide '+(img.id)">
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fdb-block py-0">
+    <div class="container py-5 my-5"
+        style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//shapes/2.svg);">
+        <div class="row justify-content-center py-5">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+                <div class="fdb-box">
+                    <h1>Building your dream home starts here with JK Cement</h1>
+                    <p class="lead">Use these simple tools to aid you in your efforts towards completing a project on time, within budget, and most importantly with the best quality products.</p>
+                    <p class="mt-4"><a class="btn btn-primary" href="#">Looks great !</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-wpr-lazyrender="1" class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <h2 class="section-title text-center primary mb-4">
+            Awards and <span>Recognitions</span>
+          </h2>
+        </div>
+      </div>
+      <div class="row d-flex d-lg-none">
+        <div class="col-12">
+          <div class="swiper awardsHomeSlider swiper-initialized swiper-horizontal">
+            <div class="swiper-wrapper" id="swiper-wrapper-613f11055185a3efb" aria-live="polite" style="transition-duration: 0ms;">
+                              <div class="swiper-slide">
+                  <a href="https://www.jkcement.com/awards/">
+                    <div class="awards-holder">
+                      <img data-src="https://www.jkcement.com/wp-content/uploads/2023/07/award-1.png" alt="" class="lazyload">
+                      <h3 class="ff-hgb mb-0 color-green award-title">
+                        <strong>Greentech Environment Award</strong>
+                      </h3>
+                      <div class="ff-hgr award-content"><p>Another big win for team Mangrol as they bag the 22nd Annual Greentech Environment Award 2022 for fostering good environmental practices.</p>
+</div>
+                    </div>
+                  </a>
+                </div>
+                              <div class="swiper-slide">
+                  <a href="https://www.jkcement.com/awards/">
+                    <div class="awards-holder">
+                      <img data-src="https://www.jkcement.com/wp-content/uploads/2023/07/award-2.png" alt="" class="lazyload">
+                      <h3 class="ff-hgb mb-0 color-green award-title">
+                        <strong>GreenCo Gold Rating Award</strong>
+                      </h3>
+                      <div class="ff-hgr award-content"><p>Another feather in the cap for JK Cement Works, Mangrol, the cement plant received CII’s GreenCo Gold rating.</p>
+</div>
+                    </div>
+                  </a>
+                </div>
+                              <div class="swiper-slide">
+                  <a href="https://www.jkcement.com/awards/">
+                    <div class="awards-holder">
+                      <img data-src="https://www.jkcement.com/wp-content/uploads/2023/07/award-3.png" alt="" class="lazyload">
+                      <h3 class="ff-hgb mb-0 color-green award-title">
+                        <strong>GreenCo Platinum Rating Award</strong>
+                      </h3>
+                      <div class="ff-hgr award-content"><p>JK Cement Works, Muddapur creates history by receiving the “GreenCo Platinum rating” from the CII</p>
+</div>
+                    </div>
+                  </a>
+                </div>
+                          </div>
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+      </div>
+      <div class="row d-none d-lg-flex">
+                  <div class="col-4">
+            <a href="https://www.jkcement.com/awards/">
+              <div class="awards-holder">
+                <img data-src="https://www.jkcement.com/wp-content/uploads/2023/07/award-1.png" alt="" class=" lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2023/07/award-1.png">
+                <h3 class="ff-hgb mb-0 color-green award-title">
+                  <strong>Greentech Environment Award</strong>
+                </h3>
+                <div class="ff-hgr award-content"><p>Another big win for team Mangrol as they bag the 22nd Annual Greentech Environment Award 2022 for fostering good environmental practices.</p>
+</div>
+              </div>
+            </a>
+          </div>
+                  <div class="col-4">
+            <a href="https://www.jkcement.com/awards/">
+              <div class="awards-holder">
+                <img data-src="https://www.jkcement.com/wp-content/uploads/2023/07/award-2.png" alt="" class=" lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2023/07/award-2.png">
+                <h3 class="ff-hgb mb-0 color-green award-title">
+                  <strong>GreenCo Gold Rating Award</strong>
+                </h3>
+                <div class="ff-hgr award-content"><p>Another feather in the cap for JK Cement Works, Mangrol, the cement plant received CII’s GreenCo Gold rating.</p>
+</div>
+              </div>
+            </a>
+          </div>
+                  <div class="col-4">
+            <a href="https://www.jkcement.com/awards/">
+              <div class="awards-holder">
+                <img data-src="https://www.jkcement.com/wp-content/uploads/2023/07/award-3.png" alt="" class=" lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2023/07/award-3.png">
+                <h3 class="ff-hgb mb-0 color-green award-title">
+                  <strong>GreenCo Platinum Rating Award</strong>
+                </h3>
+                <div class="ff-hgr award-content"><p>JK Cement Works, Muddapur creates history by receiving the “GreenCo Platinum rating” from the CII</p>
+</div>
+              </div>
+            </a>
+          </div>
+              </div>
+    </div>
+  </section>
+<section class="fdb-block">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Features</h1>
+                <p><img alt="image" class="img-fluid mt-5"
+                        src="img/img3.webp"></p>
+            </div>
+        </div>
+
+        <div class="row text-center justify-content-center mt-5 pt-5">
+            <div class="col-12 col-sm-4 col-lg-3 m-md-auto">
+                <p><i class="fa fa-bolt fa-3x" style="color: #ffe714;"></i></p>
+                <h3><strong>Lighting fast load time</strong></h3>
+            </div>
+
+            <div class="col-12 col-sm-4 col-lg-3 m-auto pt-4 pt-sm-0">
+                <p><img alt="image" class="fdb-icon" src="img/logo.png">
+                </p>
+                <h3><strong>Full Angular enabled</strong></h3>
+            </div>
+
+            <div class="col-12 col-sm-4 col-lg-3 m-auto pt-4 pt-sm-0">
+                <p><i class="fa fa-eye fa-3x"></i></p>
+                <h3><strong>Ready for SEO</strong></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="range-of-products pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <h2 class="section-title-alt secondary text-center mb-3">Discover Our <span>Range of Products</span></h2>
+          <p class="ff-hgr text-center">Explore our range of high-quality products designed to provide superior strength and durability for all your construction needs</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <!-- <div class="col-12">
+          <div class="swiper rangeSwiper">
+            <div class="swiper-wrapper">
+                          </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div> -->
+                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+            <div class="position-relative bg-mobile h-100">
+              <img data-src="img/dimg1.webp" alt="Home - Grey cement - JK Cement" title="Home - Grey cement - JK Cement" class="range-image ls-is-cached lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2023/12/1-jpg.webp">
+              <div class="range-caption">
+                <h3 class="range-title mb-2 ff-hgb">Cement</h3>
+                <div class="row">
+                  <div class="col-9 range-content ff-hgr">
+                    <p>JK Cement offers a premium range of grey cement tailored for different needs – from withstanding tough weather to providing superior strength</p>
+                  </div>
+                  <div class="col-3">
+                    <a href="https://www.jkcement.com/grey-cement/" class="btn btn-primary btn-rounded">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+            <div class="position-relative bg-mobile h-100">
+              <img data-src="https://www.jkcement.com/wp-content/uploads/2024/12/whitecement.webp" alt="JK white cement" title="JK white cement" class="range-image ls-is-cached lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2024/12/whitecement.webp">
+              <div class="range-caption">
+                <h3 class="range-title mb-2 ff-hgb">White Cement</h3>
+                <div class="row">
+                  <div class="col-9 range-content ff-hgr">
+                    <p>Explore premium white cement range which can resist cracking, chipping, &amp; peeling while withstanding extreme temperatures &amp; moisture levels.</p>
+                  </div>
+                  <div class="col-3">
+                    <a href="https://www.jkcement.com/white-cement/" class="btn btn-primary btn-rounded">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+            <div class="position-relative bg-mobile h-100">
+              <img data-src="https://www.jkcement.com/wp-content/uploads/2024/12/PUTTY-1.webp" alt="JK Cement White putty" title="JK Cement White putty" class="range-image ls-is-cached lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2024/12/PUTTY-1.webp">
+              <div class="range-caption">
+                <h3 class="range-title mb-2 ff-hgb">Wall Putty</h3>
+                <div class="row">
+                  <div class="col-9 range-content ff-hgr">
+                    <p>Give your home a stunning makeover with a range of puttyp roducts from the house of JK Cement</p>
+                  </div>
+                  <div class="col-3">
+                    <a href="https://jkmaxxpaints.com/product-category/wall-putty/" class="btn btn-primary btn-rounded">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+            <div class="position-relative bg-mobile h-100">
+              <img data-src="https://www.jkcement.com/wp-content/uploads/2024/12/paint-1.webp" alt="" title="" class="range-image ls-is-cached lazyloaded" src="https://www.jkcement.com/wp-content/uploads/2024/12/paint-1.webp">
+              <div class="range-caption">
+                <h3 class="range-title mb-2 ff-hgb">Paints</h3>
+                <div class="row">
+                  <div class="col-9 range-content ff-hgr">
+                    <p>Discover our wide range of high-quality paints, designed to transform your spaces with stunning colors and long-lasting durability</p>
+                  </div>
+                  <div class="col-3">
+                    <a href="http://www.jkmaxxpaints.com/" class="btn btn-primary btn-rounded">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                      </div>
+    </div>
+  </section>
+<section data-wpr-lazyrender="1" class="py-3 grey-bg ">
+    <div class="container">
+        <div class="about-head text-center py-3">
+          <h2>About <span>JK Cement</span> </h2>
+        </div>
+        <div class="about-cnt text-left">
+          <p>JK Cement Ltd. is a renowned cement company with a legacy of over four decades of excellence and innovation. As a leading cement manufacturer in India, JK Cement has been driving infrastructure development across the nation. We started our journey with the flagship grey cement plant in Nimbahera, Rajasthan, in 1975. Since then, we have grown into a leading cement company in India.
+          </p>
+          <p>With an installed grey cement capacity of 24 MnTPA and a global presence in over 43 countries, JK Cement stands out as a trusted name in quality and reliability. We are also among the world’s leading producers of white cement, with an installed capacity of 1.20 MnTPA, supported by cutting-edge technology and a commitment to sustainability.
+          </p>
+          <p>Driven by a vision to empower nation-building and a mission to innovate, JK Cement combines integrity, trust, and customer-centric values to set industry benchmarks. Explore JK Cement, a global leader and a preferred choice among cement manufacturers in India.
+          </p>
+        </div>
+  </div>
+</section>
+<section class="fdb-block pt-0">
+    <div class="container-fluid p-0 pb-md-5">
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656"
+            width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-5">
+                <h2>Contact Us</h2>
+                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there
+                    live the blind texts. Separated they live in Bookmarksgrove.</p>
+                <p class="lead">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 ml-auto pt-5 pt-md-0">
+                <form>
+                    <div class="row">
+                        <div class="col"><input type="text" class="form-control" placeholder="First name"></div>
+                        <div class="col"><input type="text" class="form-control" placeholder="Last name"></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col"><input type="email" class="form-control" placeholder="Enter email"></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col"><input type="email" class="form-control" placeholder="Subject"></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center"><input type="phone" class="form-control" placeholder="Phone No."></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col"><textarea class="form-control" name="message" rows="3"
+                                placeholder="How can we help?"></textarea></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col"><button class="btn btn-primary" type="submit">Submit</button></div>
+                    </div>
+                    <div class="row mt-4"></div>
+                </form>                
+            </div>
+        </div>
+    </div>
+</section>
+<section data-wpr-lazyrender="1" class="footer-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10">
+				<p class="footer-top-head text-center">Contact <span>JKC</span></p>
+				<div class="row">
+					<div class="col-sm-6">
+						<ul class="footer_call_mail">
+							<li><a href="mailto:consumer.care@jkcement.com"><i class="far fa-envelope"></i> consumer.care&#64;jkcement.com</a></li>
+							<li><a href="mailto:customercare.white@jkcement.com"><i class="far fa-envelope"></i> customercare.white&#64;jkcement.com</a></li>
+							<li><a href="mailto:consumercare@jkmaxxpaints.com"><i class="far fa-envelope"></i> consumercare&#64;jkmaxxpaints.com</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="footer_call_mail footer_call_phone">
+							<li><i class="fas fa-mobile-alt"></i> Grey Cement: <a href="tel:1800 266 4606">1800 266 4606 </a></li>
+							<li><i class="fas fa-mobile-alt"></i> Putty: <a href="tel:1800 102 8868">1800 102 8868 </a></li>
+							<li><i class="fas fa-mobile-alt"></i> Paints: <a href="tel:1800 203 4555">1800 203 4555 </a></li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="col-md-2 text-center">
+				<p class="footer-top-head">Follow <span>JKC</span></p>
+				<ul class="social-icon">
+					<li><a href="https://www.facebook.com/JKCementIndia/" target="_blank" rel="nofollow" data-channame="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/JKCementIndia" class="rounded-icon" target="_blank" rel="nofollow" data-channame="Twitter"><i class="fa-brands fa-twitter rounded-icon"></i></a></li>
+					<li><a href="https://www.instagram.com/jkcementindia/" class="rounded-icon" target="_blank" rel="nofollow" data-channame="Instagram"><i class="fa-brands fa-instagram rounded-icon"></i></a></li>
+					<li><a href="https://www.linkedin.com/company/jkcementindia" class="rounded-icon" target="_blank" rel="nofollow" data-channame="LinkedIn"><i class="fa-brands fa-linkedin-in rounded-icon"></i></a></li>
+					<li><a href="https://www.youtube.com/c/JKCementLtdIndia/" class="rounded-icon" target="_blank" rel="nofollow" data-channame="YouTube"><i class="fa-brands fa-youtube rounded-icon"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,23 @@
+
+.navbar-nav .nav-link{
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link.active-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2808f3;
+    transition: width 0.3s ease-in-out;
+}
+.navbar-nav .nav-link.active-link{
+    color: #1707f1 !important;
+}
+p{
+    margin-top: 0;
+    margin-bottom: auto;
+}

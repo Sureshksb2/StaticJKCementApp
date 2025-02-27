@@ -1,0 +1,17 @@
+.root{
+    height: 100vh;
+}
+.nav-header{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 99999;
+  width: 100%;
+}
+.body-content{
+    margin-top: 60px;
+}
+.nav-footer{
+  position:relative;
+  background-color: rgb(141, 151, 154);
+}
